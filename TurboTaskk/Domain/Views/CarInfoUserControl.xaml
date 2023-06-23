@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="TurboTaskk.Domain.Views.CarInfoUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TurboTaskk.Domain.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="450">
+    <Canvas>
+        <Label FontWeight="UltraBlack" Foreground="Black" FontSize="20"  Canvas.Left="-63" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.371,1.256">Brand</Label>
+        <Label FontWeight="UltraBlack" FontSize="20" Content="{Binding CarBrand,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Canvas.Left="-63" Canvas.Top="86" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label FontSize="20" FontWeight="UltraBlack" Foreground="Black" Canvas.Left="66" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Top">Model</Label>
+        <Label FontSize="20" FontWeight="UltraBlack" Content="{Binding CarModel,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Canvas.Left="92" Canvas.Top="86" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label FontSize="20" Foreground="Black" FontWeight="UltraBlack" Canvas.Left="194" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Top">Color</Label>
+        <Label FontSize="20" FontWeight="UltraBlack" Content="{Binding CarColor,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Canvas.Left="194" Canvas.Top="91" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
+        <Label FontSize="20" FontWeight="UltraBlack" Foreground="Black" Canvas.Left="306" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Center">Created year</Label>
+        <Label FontSize="20" FontWeight="UltraBlack" Content="{Binding CarYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Canvas.Left="331" Canvas.Top="96" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
+        <Label FontSize="20" FontWeight="UltraBlack" Foreground="Black" Canvas.Left="513" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.252,0.505">Price</Label>
+        <Label FontSize="35" FontWeight="UltraBlack" Content="{Binding CarPrice,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"  Canvas.Left="513" Canvas.Top="91" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
+        <Button Background="Red" Height="49" Command="{Binding BackCommand}" BorderThickness="0" Foreground="Black" FontWeight="UltraBlack" FontSize="18" Width="93" Canvas.Left="260" Canvas.Top="333" HorizontalAlignment="Left" VerticalAlignment="Top">Back</Button>
+    </Canvas>
+</UserControl>
